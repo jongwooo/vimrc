@@ -1,0 +1,9 @@
+[user]
+	email = jongwooo.han@gmail.com
+	name = jongwooo
+[core]
+	autocrlf = input
+[pull]
+	ff = only
+[init]
+	defaultBranch = main
