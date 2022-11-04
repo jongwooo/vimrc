@@ -10,3 +10,18 @@
 	defaultBranch = main
 [merge]
 	tool = vimdiff
+[alias]
+	c = commit
+	cm = commit -m
+	ci = commit --signoff
+	st = status
+	ps = push
+	pl = pull
+	b = branch
+	bd = branch -d
+	m = merge
+	co = checkout
+	cob = checkout -b
+	ch = "!git checkout $(git branch -vv | grep -v '^\\*' | fzf | awk '{print $1}')"
+	b0 = "!git branch | awk '/^\\*/{print $2}'"
+    back = "!git branch backup-`git b0`"
