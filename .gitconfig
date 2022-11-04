@@ -24,4 +24,4 @@
 	cob = checkout -b
 	ch = "!git checkout $(git branch -vv | grep -v '^\\*' | fzf | awk '{print $1}')"
 	b0 = "!git branch | awk '/^\\*/{print $2}'"
-    back = "!git branch backup-`git b0`"
+	back = "!git branch backup-`git b0`"
