@@ -3,7 +3,10 @@
 	name = jongwooo
 [core]
 	autocrlf = input
+	excludesfile = /Users/jongwooo/.gitignore_global
 [pull]
 	ff = only
 [init]
 	defaultBranch = main
+[merge]
+	tool = vimdiff
