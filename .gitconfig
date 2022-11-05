@@ -16,6 +16,7 @@
 	ci = commit --signoff
 	st = status
 	ps = push
+	pu = "!git push --set-upstream origin `git b0`"
 	pl = pull
 	b = branch
 	bd = branch -d
