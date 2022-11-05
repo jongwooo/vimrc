@@ -49,9 +49,13 @@ Plugin 'L9'
 Plugin 'The-NERD-tree'
 Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-Plugin 'jelera/vim-javascript-syntax'
 Plugin 'wakatime/vim-wakatime'
 Plugin 'dracula/vim'
+
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'SirVer/ultisnips'
+Plugin 'isRuslan/vim-es6'
 
 call vundle#end()
 
