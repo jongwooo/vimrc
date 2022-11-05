@@ -46,7 +46,7 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'L9'
-Plugin 'The-NERD-tree'
+Plugin 'scrooloose/nerdtree'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -61,4 +61,7 @@ Plugin 'isRuslan/vim-es6'
 call vundle#end()
 
 colorscheme dracula
+
+map <C-n> :NERDTreeToggle<CR>
+
 filetype plugin indent on
