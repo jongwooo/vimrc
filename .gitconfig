@@ -4,7 +4,7 @@
 	username = jongwooo
 [core]
 	autocrlf = input
-	excludesfile = /Users/jongwooo/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [pull]
 	ff = only
 [init]
