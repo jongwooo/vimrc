@@ -1,15 +1,18 @@
 [user]
-	email = jongwooo.han@gmail.com
 	name = jongwooo
+	email = jongwooo.han@gmail.com
+	username = jongwooo
 [core]
 	autocrlf = input
-	excludesfile = /Users/jongwooo/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [pull]
 	ff = only
 [init]
 	defaultBranch = main
 [merge]
 	tool = vimdiff
+[color]
+	ui = auto
 [alias]
 	c = commit
 	cm = commit -m
