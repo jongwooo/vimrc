@@ -11,6 +11,8 @@
 	defaultBranch = main
 [merge]
 	tool = vimdiff
+[color]
+	ui = auto
 [alias]
 	c = commit
 	cm = commit -m
