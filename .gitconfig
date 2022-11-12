@@ -2,7 +2,10 @@
 	name = jongwooo
 	email = jongwooo.han@gmail.com
 	username = jongwooo
+[gitreview]
+	username = jongwooo
 [core]
+	editor = vim
 	autocrlf = input
 	excludesfile = ~/.gitignore_global
 [pull]
