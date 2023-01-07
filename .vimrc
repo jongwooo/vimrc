@@ -7,6 +7,8 @@ set incsearch
 
 set nu
 set ruler
+set cursorcolumn
+set cursorline
 
 set bs=indent,eol,start
 set background=dark
