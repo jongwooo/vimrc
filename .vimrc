@@ -10,6 +10,9 @@ set ruler
 set cursorcolumn
 set cursorline
 
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
+
 set bs=indent,eol,start
 set background=dark
 set termguicolors
