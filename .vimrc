@@ -10,9 +10,6 @@ set ruler
 set cursorcolumn
 set cursorline
 
-set noerrorbells visualbell t_vb=
-autocmd GUIEnter * set visualbell t_vb=
-
 set bs=indent,eol,start
 set background=dark
 set termguicolors
@@ -30,6 +27,9 @@ set laststatus=2
 set showmatch
 set sm
 set history=1000
+
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
 
 au BufReadPost *
 \ if line("'\"") > 0 && line("'\"") <= line("$") |
