@@ -19,7 +19,6 @@ brew "htop"
 brew "jq"
 brew "k3d"
 brew "kubernetes-cli"
-brew "licensed"
 brew "minikube"
 brew "mysql", restart_service: true
 brew "nvm"
