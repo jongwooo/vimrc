@@ -36,6 +36,3 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [ -s "$HOME/.sdkman/bin/sdkman-init.sh" ] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 [ -s "/Users/jongwooo/.gvm/scripts/gvm" ] && source "/Users/jongwooo/.gvm/scripts/gvm"
 
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /opt/homebrew/bin/terraform terraform
-complete -o nospace -C /opt/homebrew/Cellar/tfenv/3.0.0/versions/1.3.1/terraform terraform
