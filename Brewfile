@@ -23,8 +23,6 @@ brew "kubernetes-cli"
 brew "minikube"
 brew "mysql", restart_service: true
 brew "nvm"
-brew "pyenv"
-brew "pyenv-virtualenv"
 brew "ruby"
 brew "the_silver_searcher"
 brew "tig"
