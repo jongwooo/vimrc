@@ -22,12 +22,6 @@ prompt_context() {
 
 eval $(/opt/homebrew/bin/brew shellenv)
 
-export PYENV_DIR="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_DIR/bin:$PATH"
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
