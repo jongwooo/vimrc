@@ -7,7 +7,7 @@
 [core]
 	editor = vim
 	autocrlf = input
-	excludesfile = ~/.gitignore_global
+ 	excludesfile = ~/.gitignore_global
 [pull]
 	ff = only
 [init]
@@ -20,20 +20,20 @@
 	c = commit
 	cm = commit -m
 	ci = commit --signoff
-	s = status
+ 	s = status
 	st = status -s
-	sw = switch
+ 	sw = switch
 	rt = restore
 	ps = push
-	psu = "!git push --set-upstream origin `git b0`"
-	pl = pull
+ 	psu = "!git push --set-upstream origin `git b0`"
+ 	pl = pull
 	b = branch
 	bd = branch -d
 	bD = branch -D
-	m = merge
-	co = checkout
-	cob = checkout -b
-	ch = "!git checkout $(git branch -vv | grep -v '^\\*' | fzf | awk '{print $1}')"
-	b0 = "!git branch | awk '/^\\*/{print $2}'"
-	back = "!git branch backup-`git b0`"
-	gone = "!git fetch -p && git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git bD"
+ 	m = merge
+ 	co = checkout
+ 	cob = checkout -b
+ 	ch = "!git checkout $(git branch -vv | grep -v '^\\*' | fzf | awk '{print $1}')"
+ 	b0 = "!git branch | awk '/^\\*/{print $2}'"
+ 	back = "!git branch backup-`git b0`"
+ 	gone = "!git fetch -p && git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git bD"
