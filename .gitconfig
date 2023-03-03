@@ -23,8 +23,13 @@
 	back = "!git branch backup-`git b0`"
 	bd = branch -d
 	bD = branch -D
+	bselect = "!# Select branch with preview; \n\
+		f() { \
+			_height=$(stty size | awk '{print $1}');\
+			git branch | egrep -v '^\\*' | fzf --preview \"git l {1} | head -n $_height\"; \
+		}; f"
 	c = commit
-	ch = "!git checkout $(git branch -vv | grep -v '^\\*' | fzf | awk '{print $1}')"
+	ch = "!git checkout $(git bselect)"
 	ci = commit --signoff
 	cm = commit -m
 	co = checkout
@@ -52,6 +57,11 @@
 			| awk '{print $3}'; \
 		}; f"
 	gone = "!git fetch -p && git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git bD"
+	l = "log \
+		--color --graph --decorate \
+		--date=format:'%Y-%m-%d' \
+		--abbrev-commit \
+		--pretty=format:'%C(red)%h%C(auto)%d %s %C(green)(%cr)%C(bold blue) %an'"
 	m = merge
 	pl = pull
 	ps = push
