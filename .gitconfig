@@ -18,6 +18,17 @@
 	ui = auto
 [alias]
 	a = "!git diff-select | xargs git add"
+	b = branch
+	b0 = "!git branch | awk '/^\\*/{print $2}'"
+	back = "!git branch backup-`git b0`"
+	bd = branch -d
+	bD = branch -D
+	c = commit
+	ch = "!git checkout $(git branch -vv | grep -v '^\\*' | fzf | awk '{print $1}')"
+	ci = commit --signoff
+	cm = commit -m
+	co = checkout
+	cob = checkout -b
 	diff-info = "!# Print diff report.;\n\
 		fileA=/tmp/git-s-$(uuidgen); \
 		fileB=/tmp/git-diff-$(uuidgen); \
@@ -40,23 +51,12 @@
 				\"if [[ {1} == '??' ]]; then pygmentize {3}; else git diff --color=always --cached {3}; fi\" \
 			| awk '{print $3}'; \
 		}; f"
-	c = commit
-	cm = commit -m
-	ci = commit --signoff
+	gone = "!git fetch -p && git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git bD"
+	m = merge
+	pl = pull
+	ps = push
+	psu = "!git push --set-upstream origin `git b0`"
+	rt = restore
  	s = status
 	st = status -s
  	sw = switch
-	rt = restore
-	ps = push
- 	psu = "!git push --set-upstream origin `git b0`"
- 	pl = pull
-	b = branch
-	bd = branch -d
-	bD = branch -D
- 	m = merge
- 	co = checkout
- 	cob = checkout -b
- 	ch = "!git checkout $(git branch -vv | grep -v '^\\*' | fzf | awk '{print $1}')"
- 	b0 = "!git branch | awk '/^\\*/{print $2}'"
- 	back = "!git branch backup-`git b0`"
- 	gone = "!git fetch -p && git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git bD"
