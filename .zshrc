@@ -28,5 +28,6 @@ export NVM_DIR="$HOME/.nvm"
 
 export SDKMAN_DIR="$HOME/.sdkman"
 [ -s "$HOME/.sdkman/bin/sdkman-init.sh" ] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-[ -s "/Users/jongwooo/.gvm/scripts/gvm" ] && source "/Users/jongwooo/.gvm/scripts/gvm"
 
+export GVM_DIR="$HOME/.gvm"
+[ -s "$HOME/.gvm/scripts/gvm" ] && source "$HOME/.gvm/scripts/gvm"
