@@ -20,7 +20,7 @@ prompt_context() {
   fi
 }
 
-eval $(/opt/homebrew/bin/brew shellenv)
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"
@@ -31,3 +31,5 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 export GVM_DIR="$HOME/.gvm"
 [ -s "$HOME/.gvm/scripts/gvm" ] && source "$HOME/.gvm/scripts/gvm"
+
+eval "$(github-copilot-cli alias -- "$0")"
