@@ -28,6 +28,7 @@ brew "kubernetes-cli"
 brew "minikube"
 brew "mysql", restart_service: true
 brew "nvm"
+brew "tfenv"
 brew "the_silver_searcher"
 brew "tig"
 brew "tree"
