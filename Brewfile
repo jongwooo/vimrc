@@ -31,6 +31,8 @@ brew "k3d"
 brew "kubernetes-cli"
 brew "minikube"
 brew "mysql", restart_service: true
+brew "neovim"
+brew "node"
 brew "nvm"
 brew "tfenv"
 brew "the_silver_searcher"
