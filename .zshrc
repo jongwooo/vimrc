@@ -33,3 +33,4 @@ export GVM_DIR="$HOME/.gvm"
 [ -s "$HOME/.gvm/scripts/gvm" ] && source "$HOME/.gvm/scripts/gvm"
 
 eval "$(github-copilot-cli alias -- "$0")"
+alias vim="nvim"
