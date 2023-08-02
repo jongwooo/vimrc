@@ -34,3 +34,4 @@ export GVM_DIR="$HOME/.gvm"
 
 eval "$(github-copilot-cli alias -- "$0")"
 alias vim="nvim"
+alias k="kubectl"
