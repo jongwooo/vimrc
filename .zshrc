@@ -1,5 +1,6 @@
 export PATH="$PATH:/Users/jongwooo/.bin"
 export ZSH="/Users/jongwooo/.oh-my-zsh"
+export GPG_TTY=$(tty)
 
 ZSH_THEME="agnoster"
 
