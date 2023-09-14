@@ -9,9 +9,9 @@
 	autocrlf = input
  	excludesfile = ~/.gitignore_global
 [commit]
-       gpgsign = true
+	gpgsign = true
 [gpg]
-       program = gpg
+	program = gpg
 [pull]
 	ff = only
 [init]
