@@ -34,6 +34,9 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export GVM_DIR="$HOME/.gvm"
 [ -s "$GVM_DIR/scripts/gvm" ] && source "$GVM_DIR/scripts/gvm"
 
+export KREW_DIR="${KREW_ROOT:-"$HOME/.krew"}"
+[ -s "$KREW_DIR/bin/" ] && export PATH="$KREW_ROOT/bin:$PATH"
+
 eval "$(github-copilot-cli alias -- "$0")"
 alias vim="nvim"
 alias k="kubectl"
