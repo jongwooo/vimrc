@@ -37,6 +37,8 @@ export GVM_DIR="$HOME/.gvm"
 export KREW_DIR="${KREW_ROOT:-"$HOME/.krew"}"
 [ -s "$KREW_DIR/bin/" ] && export PATH="$KREW_ROOT/bin:$PATH"
 
+[ $commands[kubectl] ] && source <(kubectl completion zsh)
+
 eval "$(github-copilot-cli alias -- "$0")"
 alias vim="nvim"
 alias k="kubectl"
