@@ -13,8 +13,7 @@ plugins=(
 	zsh-wakatime
 )
 
-source $ZSH/oh-my-zsh.sh
-source $ZSH/custom/plugins/zsh-hangul/zsh-hangul.plugin.zsh
+[ -s "$ZSH/oh-my-zsh.sh" ] && source "$ZSH/oh-my-zsh.sh"
 
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
@@ -22,7 +21,8 @@ prompt_context() {
   fi
 }
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+export ZSH_HANGUL_DIR="$ZSH/custom/plugins/zsh-hangul"
+[ -s "$ZSH_HANGUL_DIR/zsh-hangul.plugin.zsh" ] && source "$ZSH_HANGUL_DIR/zsh-hangul.plugin.zsh"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"
@@ -39,7 +39,9 @@ export KREW_DIR="${KREW_ROOT:-"$HOME/.krew"}"
 
 [ $commands[kubectl] ] && source <(kubectl completion zsh)
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(github-copilot-cli alias -- "$0")"
+
 alias vim="nvim"
 alias k="kubectl"
 alias tf="terraform"
