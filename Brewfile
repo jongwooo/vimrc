@@ -31,6 +31,7 @@ brew "helm"
 brew "htop"
 brew "httpie"
 brew "jq"
+brew "kompose"
 brew "kubernetes-cli"
 brew "minikube"
 brew "mysql", restart_service: true
