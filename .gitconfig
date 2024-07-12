@@ -75,4 +75,4 @@
 	st = status -s
  	sw = switch
 [includeIf "gitdir:~/Workspace/ssafy/"]
-	path = .gitconfig-work
+	path = .gitconfig_work
