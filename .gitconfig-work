@@ -1,0 +1,7 @@
+[user]
+	name = 한종우
+	email = jongwooo.han@gmail.com
+[commit]
+  gpgsign = false
+[gitlab]
+	username = jongwooo
