@@ -44,4 +44,5 @@ eval "$(github-copilot-cli alias -- "$0")"
 
 alias vim="nvim"
 alias k="kubectl"
+alias kdry="kubectl --dry-run=client -o yaml"
 alias tf="terraform"
