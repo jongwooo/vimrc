@@ -40,7 +40,6 @@ export KREW_DIR="${KREW_ROOT:-"$HOME/.krew"}"
 [ $commands[kubectl] ] && source <(kubectl completion zsh)
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
-eval "$(github-copilot-cli alias -- "$0")"
 
 alias vim="nvim"
 alias k="kubectl"
